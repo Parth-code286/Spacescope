@@ -45,8 +45,8 @@ This project consists of two parts: a **Server** (Node.js/Express) and a **Clien
    ```bash
    npm run dev
    ```
-5. Open the link shown in the terminal (usually `http://localhost:5173`) in your browser.
+5. Open the link shown in the terminal (usually `https://spacescope-4q7k0htjv-parths-projects-267acbe7.vercel.app`) in your browser.
 
 ## Troubleshoot
-- **API Issues**: Ensure the server is running on port 5000. The client expects the API at `http://localhost:5000/api`.
+- **API Issues**: Ensure the server is running. The client expects the API at `https://spacescope-1v1p.onrender.com`.
 - **CORS Errors**: If you see CORS errors, ensure the server is running and `cors` is enabled (it is by default in `server/index.js`).

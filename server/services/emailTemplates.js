@@ -86,7 +86,7 @@ const templates = {
         </div>
         
         <div style="text-align: center; margin-top: 30px;">
-            <a href="http://localhost:3000/dashboard" class="button">Access Main Terminal</a>
+            <a href="https://spacescope-4q7k0htjv-parths-projects-267acbe7.vercel.app/dashboard" class="button">Access Main Terminal</a>
         </div>
         `
     ),
@@ -120,7 +120,7 @@ const templates = {
         ` : ''}
 
         <div style="text-align: center;">
-            <a href="${data.link || 'http://localhost:3000/mission-control'}" class="button">View Interactive Calendar</a>
+            <a href="${data.link || 'https://spacescope-4q7k0htjv-parths-projects-267acbe7.vercel.app/mission-control'}" class="button">View Interactive Calendar</a>
         </div>
         `
     ),
@@ -144,7 +144,7 @@ const templates = {
         </div>
 
         <div style="text-align: center;">
-            <a href="${data.link || 'http://localhost:3000/academy'}" class="button">Study at the Academy</a>
+            <a href="${data.link || 'https://spacescope-4q7k0htjv-parths-projects-267acbe7.vercel.app/academy'}" class="button">Study at the Academy</a>
         </div>
         `
     ),
@@ -156,7 +156,7 @@ const templates = {
             'System Notification',
             notification.type === 'urgent' ? 'banner-planning' : 'banner-educational',
             `<p>${notification.message}</p>
-            ${notification.link ? `<a href="http://localhost:3000${notification.link}" class="button">Launch Module</a>` : ''}`
+            ${notification.link ? `<a href="https://spacescope-4q7k0htjv-parths-projects-267acbe7.vercel.app${notification.link}" class="button">Launch Module</a>` : ''}`
         );
     }
 };

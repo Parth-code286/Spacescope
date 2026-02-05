@@ -33,8 +33,8 @@ class EmailService {
 
         try {
             // Replace placeholders in templates
-            const unsubscribeUrl = `http://localhost:3000/unsubscribe?token=${unsubscribeToken}`;
-            const preferencesUrl = `http://localhost:3000/notifications/settings`;
+            const unsubscribeUrl = `https://spacescope-4q7k0htjv-parths-projects-267acbe7.vercel.app/unsubscribe?token=${unsubscribeToken}`;
+            const preferencesUrl = `https://spacescope-4q7k0htjv-parths-projects-267acbe7.vercel.app/notifications/settings`;
 
             const finalHtml = html
                 .replace(/{{unsubscribe_url}}/g, unsubscribeUrl)
