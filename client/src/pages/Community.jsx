@@ -34,9 +34,15 @@ const Community = () => {
         try {
             const res = await fetch('https://spacescope-1v1p.onrender.com/api/reports?status=APPROVED');
             const data = await res.json();
-            setReports(data);
+            if (Array.isArray(data)) {
+                setReports(data);
+            } else {
+                setReports([]);
+                console.error("API returned non-array for reports:", data);
+            }
         } catch (err) {
             console.error('Error fetching reports:', err);
+            setReports([]);
         }
     };
 
@@ -44,9 +50,14 @@ const Community = () => {
         try {
             const res = await fetch('https://spacescope-1v1p.onrender.com/api/doubts');
             const data = await res.json();
-            setDoubts(data);
+            if (Array.isArray(data)) {
+                setDoubts(data);
+            } else {
+                setDoubts([]);
+            }
         } catch (err) {
             console.error('Error fetching doubts:', err);
+            setDoubts([]);
         }
     };
 
