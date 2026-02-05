@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, Info, AlertCircle, Calendar, Target, Shield, Gauge, Move, Globe, Orbit, Zap, Share2, Rocket } from 'lucide-react';
+import { Search, Info, AlertCircle, Calendar, Target, Shield, Gauge, Move, Globe, Orbit, Zap, Share2, Rocket, Radar, Database, Scale } from 'lucide-react';
 import SmartTerm from '../components/SmartTerm';
 import './AsteroidRadar.css';
 

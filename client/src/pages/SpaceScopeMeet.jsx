@@ -15,7 +15,7 @@ const SpaceScopeMeet = () => {
     const [roomId] = useState("MISSION-ALPHA-1"); // Simplified room ID
     const [copySuccess, setCopySuccess] = useState(false);
     const [showUplinkSettings, setShowUplinkSettings] = useState(false);
-    const [uplinkUrl, setUplinkUrl] = useState("https://thick-banks-join.loca.lt");
+    const [uplinkUrl, setUplinkUrl] = useState("https://spacescope-1v1p.onrender.com");
     const [isSynced, setIsSynced] = useState(false);
 
     const socketRef = useRef();

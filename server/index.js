@@ -12,8 +12,9 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: ["http://localhost:5173", "http://localhost:3000", "https://spacescope-4q7k0htjv-parths-projects-267acbe7.vercel.app"],
-        methods: ["GET", "POST"]
+        origin: ["http://localhost:5173", "http://localhost:3000", "https://spacescope-4q7k0htjv-parths-projects-267acbe7.vercel.app" , "https://spacescope-1v1p.onrender.com"],
+        methods: ["GET", "POST"],
+        credentials: true
     }
 });
 
