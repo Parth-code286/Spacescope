@@ -12,7 +12,7 @@ const ViewInstructors = () => {
 
     const fetchInstructors = async () => {
         try {
-            const res = await fetch('http://localhost:5002/api/instructors');
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/instructors');
             const data = await res.json();
 
             if (Array.isArray(data)) {
@@ -34,7 +34,7 @@ const ViewInstructors = () => {
     const handleDelete = async (id) => {
         if (window.confirm('WARNING: Revoking instructor access will remove their credentials. Proceed?')) {
             try {
-                const res = await fetch(`http://localhost:5002/api/instructors/${id}`, {
+                const res = await fetch(`https://spacescope-1v1p.onrender.com/api/instructors/${id}`, {
                     method: 'DELETE'
                 });
                 if (res.ok) {

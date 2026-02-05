@@ -15,7 +15,7 @@ const CosmicWeather = () => {
     const [historicalData, setHistoricalData] = useState([]);
     const [flareIntensityData, setFlareIntensityData] = useState([]);
 
-    const API_BASE = 'http://localhost:5002/api';
+    const API_BASE = 'https://spacescope-1v1p.onrender.com/api';
 
     const calculateStatus = (wind, k, bz) => {
         let score = 0;

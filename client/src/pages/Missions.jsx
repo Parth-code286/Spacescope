@@ -10,7 +10,7 @@ const Missions = () => {
     const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     const [loading, setLoading] = useState(true);
 
-    const API_BASE = 'http://localhost:5002/api';
+    const API_BASE = 'https://spacescope-1v1p.onrender.com/api';
 
     useEffect(() => {
         const fetchLaunches = async () => {

@@ -5,7 +5,7 @@ import notificationService from '../../services/notificationService';
 import io from 'socket.io-client';
 import './NotificationBell.css';
 
-const socket = io('http://localhost:5002');
+const socket = io('https://spacescope-1v1p.onrender.com');
 
 const NotificationBell = () => {
     const [isOpen, setIsOpen] = useState(false);

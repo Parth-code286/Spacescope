@@ -11,7 +11,7 @@ const EarthLink = () => {
     const [loading, setLoading] = useState(true);
     const [gameMode, setGameMode] = useState(false);
 
-    const API_BASE = 'http://localhost:5002/api';
+    const API_BASE = 'https://spacescope-1v1p.onrender.com/api';
 
     // Initial Location
     useEffect(() => {

@@ -8,7 +8,7 @@ export default defineConfig({
     allowedHosts: ["brave-crabs-listen.loca.lt", "bright-results-tell.loca.lt", "all"],
     proxy: {
       '/api': {
-        target: 'http://localhost:5002',
+        target: 'https://spacescope-1v1p.onrender.com',
         changeOrigin: true,
         secure: false
       }

@@ -10,7 +10,7 @@ const CommanderReview = () => {
 
     const fetchReports = async () => {
         try {
-            const res = await fetch('http://localhost:5002/api/reports?status=PENDING');
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/reports?status=PENDING');
             const data = await res.json();
             // Map 'username' to 'user' for component consistency
             const mapped = data.map(r => ({
@@ -25,7 +25,7 @@ const CommanderReview = () => {
 
     const handleAdminAction = async (id, status) => {
         try {
-            const res = await fetch('http://localhost:5002/api/reports/verify', {
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/reports/verify', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ id, status })

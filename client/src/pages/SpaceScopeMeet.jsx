@@ -3,7 +3,7 @@ import { Mic, MicOff, Video, VideoOff, PhoneOff, Shield, Radio, Activity, Users,
 import { io } from 'socket.io-client';
 import './SpaceScopeMeet.css';
 
-const SOCKET_SERVER = "http://localhost:5002"; // Update with production URL if needed
+const SOCKET_SERVER = "https://spacescope-1v1p.onrender.com"; // Update with production URL if needed
 
 const SpaceScopeMeet = () => {
     const [isMicOn, setIsMicOn] = useState(true);

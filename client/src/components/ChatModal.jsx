@@ -3,7 +3,7 @@ import { Send, X, User, Shield } from 'lucide-react';
 import { io } from 'socket.io-client';
 import './ChatModal.css';
 
-const socket = io('http://localhost:5002');
+const socket = io('https://spacescope-1v1p.onrender.com');
 
 const ChatModal = ({ instructor, onClose }) => {
     const [messages, setMessages] = useState([

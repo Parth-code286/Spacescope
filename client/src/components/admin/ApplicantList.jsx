@@ -10,7 +10,7 @@ const ApplicantList = ({ onVerify }) => {
 
     const fetchApplicants = async () => {
         try {
-            const res = await fetch('http://localhost:5002/api/instructor-applications');
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/instructor-applications');
             const data = await res.json();
             // Map DB snake_case to component camelCase
             const mapped = data.map(app => ({

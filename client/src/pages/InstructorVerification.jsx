@@ -154,7 +154,7 @@ const InstructorVerification = ({ isEmbedded = false, applicantData = null, onAc
         const dbStatus = status.toUpperCase() === 'APPROVED' ? 'APPROVED' : status.toUpperCase() === 'REJECTED' ? 'REJECTED' : 'REQUESTED';
 
         try {
-            const res = await fetch('http://localhost:5002/api/verify-instructor', {
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/verify-instructor', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

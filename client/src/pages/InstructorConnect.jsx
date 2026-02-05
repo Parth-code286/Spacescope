@@ -31,7 +31,7 @@ const InstructorConnect = () => {
 
     const fetchUpcomingSessions = async () => {
         try {
-            const res = await fetch('http://localhost:5002/api/sessions/public');
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/sessions/public');
             const data = await res.json();
             setUpcomingSessions(data);
         } catch (err) {
@@ -41,7 +41,7 @@ const InstructorConnect = () => {
 
     const fetchInstructors = async () => {
         try {
-            const res = await fetch('http://localhost:5002/api/instructors');
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/instructors');
             const data = await res.json();
             if (Array.isArray(data)) {
                 setInstructors(data);

@@ -19,7 +19,7 @@ const SpaceEvents = () => {
     const [auroraForecast, setAuroraForecast] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    const API_BASE = 'http://localhost:5002/api';
+    const API_BASE = 'https://spacescope-1v1p.onrender.com/api';
 
     useEffect(() => {
         // Get User Location with City Name

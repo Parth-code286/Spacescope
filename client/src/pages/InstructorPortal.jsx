@@ -47,7 +47,7 @@ const InstructorPortal = () => {
 
     const fetchSessions = async (id) => {
         try {
-            const res = await fetch(`http://localhost:5002/api/instructor-sessions?instructorId=${id}`);
+            const res = await fetch(`https://spacescope-1v1p.onrender.com/api/instructor-sessions?instructorId=${id}`);
             const data = await res.json();
             setSessions(data);
 
@@ -64,7 +64,7 @@ const InstructorPortal = () => {
     const handleCreateSession = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('http://localhost:5002/api/instructor-sessions', {
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/instructor-sessions', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ ...newSession, instructor_id: instructor.id })
@@ -81,7 +81,7 @@ const InstructorPortal = () => {
 
     const updateSessionStatus = async (id, status) => {
         try {
-            const res = await fetch(`http://localhost:5002/api/instructor-sessions/${id}`, {
+            const res = await fetch(`https://spacescope-1v1p.onrender.com/api/instructor-sessions/${id}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ status })
@@ -89,7 +89,7 @@ const InstructorPortal = () => {
             if (res.ok) {
                 fetchSessions(instructor.id);
                 // Also update main instructor status for the student view
-                await fetch(`http://localhost:5002/api/instructors/${instructor.id}/status`, {
+                await fetch(`https://spacescope-1v1p.onrender.com/api/instructors/${instructor.id}/status`, {
                     method: 'PATCH',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({

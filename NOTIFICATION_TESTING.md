@@ -57,7 +57,7 @@ psql -U postgres -d spacescope -f schema/sample_notifications.sql
 **Using the API directly:**
 ```bash
 # In terminal or Postman:
-curl -X POST http://localhost:5002/api/notifications/send \
+curl -X POST https://spacescope-1v1p.onrender.com/api/notifications/send \
   -H "Content-Type: application/json" \
   -d '{
     "type": "urgent",
@@ -107,7 +107,7 @@ psql -U postgres -d spacescope -f schema/sample_notifications.sql
 1. Check server terminal for errors
 2. Verify server started successfully
 3. Check that notification routes are imported in `index.js`
-4. Test API directly: `curl http://localhost:5002/api/notifications`
+4. Test API directly: `curl https://spacescope-1v1p.onrender.com/api/notifications`
 
 ---
 

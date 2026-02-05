@@ -32,7 +32,7 @@ const Community = () => {
 
     const fetchReports = async () => {
         try {
-            const res = await fetch('http://localhost:5002/api/reports?status=APPROVED');
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/reports?status=APPROVED');
             const data = await res.json();
             setReports(data);
         } catch (err) {
@@ -42,7 +42,7 @@ const Community = () => {
 
     const fetchDoubts = async () => {
         try {
-            const res = await fetch('http://localhost:5002/api/doubts');
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/doubts');
             const data = await res.json();
             setDoubts(data);
         } catch (err) {
@@ -78,7 +78,7 @@ const Community = () => {
         setIsSubmitting(true);
 
         try {
-            const res = await fetch('http://localhost:5002/api/reports', {
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/reports', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -104,7 +104,7 @@ const Community = () => {
     const handleDoubtSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('http://localhost:5002/api/doubts', {
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/doubts', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -124,7 +124,7 @@ const Community = () => {
     const handleReplySubmit = async (e, doubtId) => {
         e.preventDefault();
         try {
-            const res = await fetch(`http://localhost:5002/api/doubts/${doubtId}/replies`, {
+            const res = await fetch(`https://spacescope-1v1p.onrender.com/api/doubts/${doubtId}/replies`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -146,7 +146,7 @@ const Community = () => {
         setLoginError('');
         setIsSubmitting(true);
         try {
-            const res = await fetch('http://localhost:5002/api/instructor-login', {
+            const res = await fetch('https://spacescope-1v1p.onrender.com/api/instructor-login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(loginForm)
@@ -346,7 +346,7 @@ const Community = () => {
                                 e.preventDefault();
                                 setIsSubmitting(true);
                                 try {
-                                    const res = await fetch('http://localhost:5002/api/instructor-applications', {
+                                    const res = await fetch('https://spacescope-1v1p.onrender.com/api/instructor-applications', {
                                         method: 'POST',
                                         headers: { 'Content-Type': 'application/json' },
                                         body: JSON.stringify(instructorForm)

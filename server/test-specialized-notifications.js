@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const API_URL = 'http://localhost:5002/api/notifications';
+const API_URL = 'https://spacescope-1v1p.onrender.com/api/notifications';
 
 async function sendSpecializedNotifications() {
     try {
